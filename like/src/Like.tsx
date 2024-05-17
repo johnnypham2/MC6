@@ -3,15 +3,15 @@ import { BsHeart } from "react-icons/bs";
 import { BsHeartFill } from "react-icons/bs";
 
 const Like = () => {
-const [isFaved, setIsFaved] = useState(false);
+const [isLiked, setIsLiked] = useState(false);
 
 const handleClick = () => {
-    setIsFaved(!isFaved);
+    setIsLiked(!isLiked);
 };
 
   return (   
      <div onClick={handleClick}>
-  {isFaved ? <BsHeartFill size={100}/> : <BsHeart size={100}/>}
+  {isLiked ? <BsHeartFill size={100}/> : <BsHeart size={100}/>}
 
 
     </div>
